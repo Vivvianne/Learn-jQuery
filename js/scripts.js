@@ -1,30 +1,19 @@
-jQuery(document).ready(function() {
-    jQuery("h1").click(function() {
-        alert("This is a header.");
 
+    $(document).ready(function() {
+        $("p").click(function() {
+        $("img").show();
     });
-    jQuery("p").click(function() {
-        alert("This is a paragraph.");
     });
-    jQuery("img").click(function() {
-        alert("This is an image.");
+
+    $(document).ready(function(){
+        $("#bbee").click(function(){
+            $("#beeimg").toggleClass('bbeeimg');
+            // $(".bumble_bee-hidden").hide();
+        });
+    });
+    $(document).ready(function(){
+        $("p").click(function(){
+            $(".bumble_bee-showing").toggle();
+            $(".bumble_bee-hidden").toggle();
+        })
     })
-
-    $('cipher').clicked(function(){
-        var input = prompt('string you want ciphered');
-
-        var capitaliseFirstLastReversed = function(string){
-            var capsFirst = string.charAt(0).toUpperCase();
-            var capsLast = string.charAt((string.length -1)).toUpperCase();
-            return capsLast + capsFirst;
-        }
-
-        var originalPlusReversedChar = function(string){
-            var reversedFirstLast = capitaliseFirstLastReversed(string);
-        }
-
-
-    });
-
-
-})

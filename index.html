@@ -2,27 +2,34 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
-
-  
     <title>Html Help Document</title>
 </head>
 <body>
     <div class="container">
     <h1>Html help</h1>
-    <p>This is a special helpful page. If you click somewhere it will tell you what type of html element you clicked on.</p>
-    <p>Look at this cute walrus</p>
-    <img src="img/walrus.jpeg">
-    <h2>Peek-a-boo</h2>
-    <p>Let's play peek-a-boo. Click here to see the surprise.</p>
-    <img src="img/bumble_bee.jpeg">
-    </div>
     
-    <div class="p-5>
+        <p>This is a special helpful page. If you click somewhere it will tell you what type of html element you clicked on.</p>
+        <p>Look at this cute walrus</p>
+    <img src="img/walrus.jpeg">
+    </div>
+    <div class="container">
+        <h2>Peek-a-boo</h2>
+        <div class="bumble bee hiden">
+            <p>Let's play peek-a-boo. Click here to see the surprise.</p>
+        </div>     
+        <div class="bumble_bee_showing" >
+        <p id="bbee">What a cute bumble bee. Click here to hide her again.</p>
+        
+        <img class="bbeeimg" id="beeimg" src="img/bumble_bee.jpeg">
+        </div>
+    </div>  
+    <div class="p-5">
         <button id="cipher" class="btn btn-lg btn-success">click here to enter text</button>
     </div>
- 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256/FgpCb/KJQ1LNF0u91ta32o/NMZx1twRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
 </body>
 </html>
